@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book Service - SparkleClean</title>
+  
+  <!-- Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Information Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <svg class="topbar-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:info@sparkleclean.com">info@sparkleclean.com</a>
+        </div>
+        <div class="top-bar-item">
+          <svg class="topbar-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 16 14"></polyline>
+          </svg>
+          <span>Mon - Sat: 7:00 AM - 7:00 PM | Sun: Closed</span>
+        </div>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <svg class="topbar-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <a href="tel:18005550199">Cell: (800) 555-0199</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation Bar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"></path>
+          </svg>
+        </div>
+        <span>SparkleClean</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="locations.html" class="nav-link">Locations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="calculator.html" class="nav-link">Estimator</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="tel:18005550199" class="nav-phone-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>(800) 555-0199</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">Contact & Book Service</h1>
+      <p class="page-subtitle">Have questions or ready to schedule your cleaning? Fill out the form or reach our dispatch desk directly.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> &gt; <span>Contact</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form & Details Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="badge">Direct Communication</div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">
+            Our customer care team is standing by to answer your service questions, customize commercial contracts, or assist with date rescheduling.
+          </p>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="info-title">Phone & Dispatch Cell</div>
+              <div class="info-value"><a href="tel:18005550199" style="color: var(--primary); text-decoration: none;">(800) 555-0199</a></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="info-title">Email Inquiries</div>
+              <div class="info-value"><a href="mailto:info@sparkleclean.com" style="color: var(--primary); text-decoration: none;">info@sparkleclean.com</a></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="info-title">Dispatch Working Hours</div>
+              <div class="info-value">Mon - Sat: 7:00 AM - 7:00 PM<br><span style="color: var(--text-muted); font-size: 0.85rem;">Sun: Closed (Emergency hotline active)</span></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="info-title">Main Office Address</div>
+              <div class="info-value">450 Sparkle Way, Suite 300, Metro City, CA 90210</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Booking & Message Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem;">Schedule A Cleaning Service</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Fill in your details below. We confirm all requests within 2 hours.</p>
+
+          <form id="contact-page-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">Cell Phone Number *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="(555) 000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-service">Service Type *</label>
+                <select id="contact-service" class="form-select" required>
+                  <option value="">Select a Service...</option>
+                  <option value="standard">Standard Residential Cleaning</option>
+                  <option value="deep">Deep Detailed Cleaning</option>
+                  <option value="move">Move-In / Move-Out Clean</option>
+                  <option value="commercial">Commercial / Office Cleaning</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-zip">ZIP Code *</label>
+                <input type="text" id="contact-zip" class="form-input" placeholder="e.g. 90210" maxlength="5" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-date">Preferred Date *</label>
+                <input type="date" id="contact-date" class="form-input" required>
+              </div>
+
+              <div class="form-group full">
+                <label for="contact-notes">Special Instructions or Home Notes</label>
+                <textarea id="contact-notes" class="form-textarea" placeholder="Provide home size details, pet notes, or specific focus areas..."></textarea>
+              </div>
+
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="section section-alt">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header">
+        <div class="badge">Got Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Quick answers about our cleaning procedures, supplies, payments, and guarantee.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question">
+            <span>Do I need to be home during the cleaning appointment?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No, you do not need to be home. Many of our regular clients provide a secure door lockbox code, smart lock code, or leave a key with building reception. All cleaners are background-checked and insured.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do your cleaners bring their own supplies and equipment?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Our teams arrive fully equipped with non-toxic, pet-safe cleaning solutions, HEPA-filter vacuums, microfiber cloths, and scrubbers. If you have a specific specialty cleaner you prefer us to use, just let us know!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is your 24-Hour Satisfaction Guarantee?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>If you are ever dissatisfied with any area of your clean, simply notify us within 24 hours. We will send a team back to re-clean the specific area free of charge — no questions asked.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are your cleaning staff background-checked and insured?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely 100%. Every SparkleClean team member undergoes thorough criminal background checks, reference checks, and mandatory safety training before stepping into a client's home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-badge">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"></path>
+              </svg>
+            </div>
+            <span>SparkleClean</span>
+          </a>
+          <p>Your trusted local professional cleaning company. Delivering spotless homes, pristine offices, and healthy environments.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="calculator.html">Price Estimator</a></li>
+            <li><a href="contact.html">Contact & Book</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Standard Residential</a></li>
+            <li><a href="services.html">Deep Cleaning</a></li>
+            <li><a href="services.html">Move-In/Out Clean</a></li>
+            <li><a href="services.html">Commercial & Office</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #cbd5e1;">Cell: (800) 555-0199</p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #cbd5e1;">Email: info@sparkleclean.com</p>
+          <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.75rem;">
+            Mon - Sat: 7:00 AM - 7:00 PM<br>Sun: Closed
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SparkleClean Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="toast-msg">Request submitted successfully!</span>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

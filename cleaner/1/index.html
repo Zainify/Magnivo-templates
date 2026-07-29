@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SparkleClean - Professional Cleaning Services</title>
+  
+  <!-- Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. TOP INFORMATION BAR (Email, Timing, Cell Number)
+       ========================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <svg class="topbar-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:info@sparkleclean.com">info@sparkleclean.com</a>
+        </div>
+        <div class="top-bar-item">
+          <svg class="topbar-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Mon - Sat: 7:00 AM - 7:00 PM | Sun: Closed</span>
+        </div>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <svg class="topbar-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <a href="tel:18005550199" className="font-semibold">Cell: (800) 555-0199</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. HEADER & NAVIGATION BAR
+       Logo, Pages: Services, Locations, Gallery, Blog, About, Cell Number Button
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"></path>
+          </svg>
+        </div>
+        <span>SparkleClean</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="locations.html" class="nav-link">Locations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="calculator.html" class="nav-link">Estimator</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="nav-cta">
+        <a href="tel:18005550199" class="nav-phone-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>(800) 555-0199</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. HERO SECTION
+       Left: Heading & Details
+       Right: Quick Booking / Quote Form
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content">
+        <div class="badge">
+          <span>Professional & Insured Services</span>
+        </div>
+        <h1>Spotless Cleaning Services For Your <span>Home & Office</span></h1>
+        <p class="hero-subtitle">
+          Enjoy a pristine space with our background-checked cleaning specialists. We deliver reliable, eco-friendly, and detailed cleaning tailored to your schedule.
+        </p>
+
+        <ul class="hero-bullet-list">
+          <li class="hero-bullet-item">
+            <div class="check-icon-box">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <span>Background-Checked & Insured Cleaners</span>
+          </li>
+          <li class="hero-bullet-item">
+            <div class="check-icon-box">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <span>Eco-Friendly, Pet-Safe Products</span>
+          </li>
+          <li class="hero-bullet-item">
+            <div class="check-icon-box">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <span>100% Satisfaction Guarantee</span>
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#calculator" class="btn btn-outline">Instant Price Estimator</a>
+          <a href="#services" class="btn btn-primary">Explore Services</a>
+        </div>
+      </div>
+
+      <!-- Right Side Booking Form -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h2 class="hero-form-title">Request A Free Quote</h2>
+          <p class="hero-form-subtitle">Fill in your details below to schedule or get an instant callback.</p>
+        </div>
+
+        <form id="hero-booking-form" class="booking-form">
+          <div class="form-group full">
+            <label for="hero-name">Full Name *</label>
+            <input type="text" id="hero-name" class="form-input" placeholder="John Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hero-phone">Phone Number *</label>
+            <input type="tel" id="hero-phone" class="form-input" placeholder="(800) 555-0199" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hero-email">Email Address *</label>
+            <input type="email" id="hero-email" class="form-input" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hero-service">Service Type *</label>
+            <select id="hero-service" class="form-select" required>
+              <option value="Standard Cleaning">Standard Cleaning</option>
+              <option value="Deep Clean">Deep Detailed Clean</option>
+              <option value="Move In/Out">Move-In / Move-Out</option>
+              <option value="Commercial Clean">Commercial & Office</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hero-date">Preferred Date *</label>
+            <input type="date" id="hero-date" class="form-input" required>
+          </div>
+
+          <div class="form-group full" style="margin-top: 0.5rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit Cleaning Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3.1 TRUST BADGES & GUARANTEES BAR
+       ========================================================================== -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div>
+            <div class="trust-title">Background-Checked</div>
+            <div class="trust-subtitle">100% Vetted & Insured Staff</div>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <div>
+            <div class="trust-title">Transparent Pricing</div>
+            <div class="trust-subtitle">No Hidden Fees or Surprises</div>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div>
+            <div class="trust-title">100% Guaranteed</div>
+            <div class="trust-subtitle">Free Re-Clean Within 24 Hours</div>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z"></path></svg>
+          </div>
+          <div>
+            <div class="trust-title">Non-Toxic & Safe</div>
+            <div class="trust-subtitle">Pet & Kid Friendly Products</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3.2 HOW IT WORKS - 4 STEP PROCESS
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Simple 4-Step Process</div>
+        <h2 class="section-title">How SparkleClean Works</h2>
+        <p class="section-desc">Booking your professional cleaning is effortless, transparent, and completely hassle-free.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-step-badge">1</div>
+          <h3 class="process-title">Choose Service & Date</h3>
+          <p class="process-desc">Select standard, deep, or move cleaning and pick a date that seamlessly fits your schedule.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-badge">2</div>
+          <h3 class="process-title">Instant Fixed Pricing</h3>
+          <p class="process-desc">Get an accurate estimate upfront with no surprise costs or unexpected hourly fees.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-badge">3</div>
+          <h3 class="process-title">Vetted Pros Arrive</h3>
+          <p class="process-desc">Our background-checked cleaners show up fully equipped with non-toxic supplies and tools.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-badge">4</div>
+          <h3 class="process-title">Enjoy Your Fresh Home</h3>
+          <p class="process-desc">Relax and enjoy your sparkling, sanitized living space backed by our 100% satisfaction guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3.3 WHAT'S INCLUDED IN EVERY CLEAN (INTERACTIVE CHECKLIST TABS)
+       ========================================================================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Detailed Checklist</div>
+        <h2 class="section-title">What's Included In Every Cleaning Visit</h2>
+        <p class="section-desc">Explore our room-by-room standardized cleaning procedure to see how we guarantee thorough results.</p>
+      </div>
+
+      <div class="checklist-container">
+        <div class="checklist-tabs">
+          <button class="checklist-tab-btn active" data-room="kitchen">🍳 Kitchen Area</button>
+          <button class="checklist-tab-btn" data-room="bathroom">🚿 Bathrooms</button>
+          <button class="checklist-tab-btn" data-room="bedrooms">🛏️ Bedrooms</button>
+          <button class="checklist-tab-btn" data-room="living">🛋️ Living & Dining</button>
+        </div>
+
+        <div class="checklist-grid" id="checklist-content">
+          <!-- JS Populated -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3.4 ZIP CODE SERVICE COVERAGE CHECKER
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 750px; margin: 0 auto; text-align: center;">
+        <div class="badge">Coverage Locator</div>
+        <h2 class="section-title">Check If We Service Your ZIP Code</h2>
+        <p class="section-desc">Enter your 5-digit ZIP code below to instantly confirm availability in your neighborhood.</p>
+
+        <div class="zip-checker-box">
+          <form id="zip-checker-form">
+            <div class="zip-input-group">
+              <input type="text" id="zip-input" class="zip-input" placeholder="e.g. 90210, 10001, 60601" maxlength="5">
+              <button type="submit" class="btn btn-primary">Check Availability</button>
+            </div>
+          </form>
+          <div id="zip-result" class="zip-result-message"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3.5 PROMOTIONAL SPECIAL OFFER BANNER
+       ========================================================================== -->
+  <div class="container">
+    <div class="promo-banner">
+      <div>
+        <div class="promo-title">Get $25 Off Your First Deep Clean!</div>
+        <div class="promo-desc">Use coupon code at checkout or mention it when calling our booking desk today.</div>
+        <div class="promo-code-badge">PROMO CODE: SPARKLE25</div>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-accent" style="white-space: nowrap; font-size: 1.05rem; padding: 0.85rem 1.75rem;">
+          Claim Offer & Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       4. SERVICES SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Our Services</div>
+        <h2 class="section-title">Comprehensive Cleaning Solutions</h2>
+        <p class="section-desc">Tailored cleaning programs for residential homes, deep sanitization, moving transitions, and commercial facilities.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Standard Residential Cleaning</h3>
+          </div>
+          <p class="service-desc">Regular recurring maintenance cleaning to keep your home fresh, hygienic, and organized every week.</p>
+          <ul class="service-features">
+            <li>Dusting all accessible furniture and decor</li>
+            <li>Kitchen countertops and exterior appliance wipedown</li>
+            <li>Full bathroom sanitization and mirror polishing</li>
+            <li>Vacuuming carpets and mopping hard surface floors</li>
+          </ul>
+          <a href="#calculator" class="btn btn-outline" style="width: 100%;">Calculate Price</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="service-title">Deep Detailed Clean</h3>
+          </div>
+          <p class="service-desc">An intensive top-to-bottom overhaul covering accumulated grime, baseboards, fixtures, and hidden dust areas.</p>
+          <ul class="service-features">
+            <li>Hand-washing baseboards, door frames & trim</li>
+            <li>Degreasing stovetops, range hoods & backsplash</li>
+            <li>Scrubbing tile grout lines & shower enclosures</li>
+            <li>Cleaning inside microwave and cabinet exteriors</li>
+          </ul>
+          <a href="#calculator" class="btn btn-outline" style="width: 100%;">Calculate Price</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Move-In / Move-Out Clean</h3>
+          </div>
+          <p class="service-desc">Ensure complete deposit recovery or prepare a vacant home for seamless new tenancy with thorough sanitization.</p>
+          <ul class="service-features">
+            <li>Cleaning inside empty cabinets, drawers, and closets</li>
+            <li>Deep oven interior and refrigerator cleaning</li>
+            <li>Wiping window sills, tracks, and interior glass</li>
+            <li>Complete floor restoration and sanitization</li>
+          </ul>
+          <a href="#calculator" class="btn btn-outline" style="width: 100%;">Calculate Price</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                <line x1="15" y1="10" x2="15" y2="10.01"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Commercial & Office Cleaning</h3>
+          </div>
+          <p class="service-desc">Maintain a professional, clean environment for employees and clients with customized janitorial schedules.</p>
+          <ul class="service-features">
+            <li>Workstation desk sanitization and trash removal</li>
+            <li>Breakroom kitchen cleaning and appliance maintenance</li>
+            <li>Restroom restocking, scrubbing, and disinfecting</li>
+            <li>Common area vacuuming, dusting, and floor care</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%;">Request Quote</a>
+        </div>
+      </div>
+
+      <!-- Service Comparison Table -->
+      <div style="margin-top: 4rem;">
+        <h3 style="font-size: 1.5rem; font-weight: 800; text-align: center; margin-bottom: 1.5rem;">Compare Cleaning Packages</h3>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Cleaning Task / Feature</th>
+                <th>Standard Clean</th>
+                <th>Deep Detailed Clean</th>
+                <th>Move-In / Out Clean</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dusting Furniture, Sills & Shelves</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+              </tr>
+              <tr>
+                <td>Vacuuming Carpets & Mopping Hard Floors</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+              </tr>
+              <tr>
+                <td>Sanitizing Bathrooms & Kitchen Countertops</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+              </tr>
+              <tr>
+                <td>Hand-Wiping Baseboards & Door Frames</td>
+                <td class="cross">✕ Optional Add-on</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+              </tr>
+              <tr>
+                <td>Cleaning Inside Cabinets & Empty Closets</td>
+                <td class="cross">✕ Not Included</td>
+                <td class="cross">✕ Optional Add-on</td>
+                <td class="check">✓ Included</td>
+              </tr>
+              <tr>
+                <td>Scrubbing Heavy Kitchen Grease & Grout Lines</td>
+                <td class="cross">✕ Not Included</td>
+                <td class="check">✓ Included</td>
+                <td class="check">✓ Included</td>
+              </tr>
+              <tr>
+                <td>Inside Oven & Inside Refrigerator Cleaning</td>
+                <td class="cross">✕ Optional Add-on</td>
+                <td class="cross">✕ Optional Add-on</td>
+                <td class="check">✓ Included</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PRICE CALCULATOR SECTION
+       ========================================================================== -->
+  <section class="section" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Transparent Pricing</div>
+        <h2 class="section-title">Instant Price Estimator</h2>
+        <p class="section-desc">Get an accurate estimate based on your home size and selected frequency.</p>
+      </div>
+
+      <div class="calculator-box">
+        <div>
+          <div class="calc-group">
+            <label class="calc-label">Number of Bedrooms</label>
+            <div class="calc-options">
+              <button class="calc-btn" data-type="bedrooms" data-value="1">1 Bed</button>
+              <button class="calc-btn active" data-type="bedrooms" data-value="2">2 Beds</button>
+              <button class="calc-btn" data-type="bedrooms" data-value="3">3 Beds</button>
+              <button class="calc-btn" data-type="bedrooms" data-value="4">4 Beds</button>
+              <button class="calc-btn" data-type="bedrooms" data-value="5">5+ Beds</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">Number of Bathrooms</label>
+            <div class="calc-options">
+              <button class="calc-btn" data-type="bathrooms" data-value="1">1 Bath</button>
+              <button class="calc-btn active" data-type="bathrooms" data-value="2">2 Baths</button>
+              <button class="calc-btn" data-type="bathrooms" data-value="3">3 Baths</button>
+              <button class="calc-btn" data-type="bathrooms" data-value="4">4+ Baths</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">Cleaning Depth</label>
+            <div class="calc-options">
+              <button class="calc-btn active" data-service="standard">Standard Clean</button>
+              <button class="calc-btn" data-service="deep">Deep Clean (+50%)</button>
+              <button class="calc-btn" data-service="moveout">Move-In/Out (+80%)</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">Recurring Frequency Discount</label>
+            <div class="calc-options">
+              <button class="calc-btn active" data-freq="weekly">Weekly (-20%)</button>
+              <button class="calc-btn" data-freq="biweekly">Bi-Weekly (-15%)</button>
+              <button class="calc-btn" data-freq="monthly">Monthly (-10%)</button>
+              <button class="calc-btn" data-freq="onetime">One-Time</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">Optional Add-On Services</label>
+            <div class="calc-checkboxes">
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-checkbox" value="oven"> Inside Oven (+$35)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-checkbox" value="fridge"> Inside Refrigerator (+$30)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-checkbox" value="windows"> Interior Windows (+$45)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-checkbox" value="balcony"> Balcony / Patio (+$30)
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-summary">
+          <div>
+            <h3 class="summary-title">Estimate Summary</h3>
+            <div id="summary-breakdown">
+              <!-- JS Populated -->
+            </div>
+          </div>
+
+          <div>
+            <div class="summary-total">
+              <span class="total-label">Estimated Price:</span>
+              <span class="total-amount" id="calc-total">$120</span>
+            </div>
+
+            <a href="#hero" class="btn btn-primary" style="width: 100%; margin-top: 1.25rem;">
+              Book With This Estimate
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. LOCATIONS SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="locations">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Service Coverage</div>
+        <h2 class="section-title">Areas We Proudly Clean</h2>
+        <p class="section-desc">Providing punctual, high-quality residential and commercial cleaning across the metro area and surrounding suburbs.</p>
+      </div>
+
+      <div class="locations-grid">
+        <div class="location-card">
+          <div class="location-header">
+            <svg class="location-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <h3 class="location-title">Downtown & Central</h3>
+          </div>
+          <ul class="location-list">
+            <li>• Financial District</li>
+            <li>• Central Business District</li>
+            <li>• Midtown & Loft District</li>
+            <li>• Waterfront Neighborhoods</li>
+          </ul>
+        </div>
+
+        <div class="location-card">
+          <div class="location-header">
+            <svg class="location-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <h3 class="location-title">North Suburbs</h3>
+          </div>
+          <ul class="location-list">
+            <li>• Northwood Estates</li>
+            <li>• Highland Park</li>
+            <li>• Sunnyvale Community</li>
+            <li>• Riverbend Heights</li>
+          </ul>
+        </div>
+
+        <div class="location-card">
+          <div class="location-header">
+            <svg class="location-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <h3 class="location-title">West Metro</h3>
+          </div>
+          <ul class="location-list">
+            <li>• West Oak Ridge</li>
+            <li>• Silver Lake District</li>
+            <li>• Greenfield Valley</li>
+            <li>• Tech Park Corridor</li>
+          </ul>
+        </div>
+
+        <div class="location-card">
+          <div class="location-header">
+            <svg class="location-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <h3 class="location-title">South Region</h3>
+          </div>
+          <ul class="location-list">
+            <li>• Southridge Center</li>
+            <li>• Pinecrest Estates</li>
+            <li>• Meadowbrook Ridge</li>
+            <li>• Cedar Grove Valley</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. GALLERY SECTION
+       ========================================================================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Visual Transformations</div>
+        <h2 class="section-title">Before & After Project Gallery</h2>
+        <p class="section-desc">Explore actual results from kitchens, bathrooms, and living spaces cleaned by our team.</p>
+      </div>
+
+      <div class="gallery-tabs">
+        <button class="gallery-tab-btn active" data-filter="all">All Projects</button>
+        <button class="gallery-tab-btn" data-filter="kitchen">Kitchens</button>
+        <button class="gallery-tab-btn" data-filter="bathroom">Bathrooms</button>
+        <button class="gallery-tab-btn" data-filter="living">Living Areas</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card" data-category="kitchen">
+          <div class="gallery-image-box">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Kitchen Cleaning" class="gallery-img">
+            <span class="gallery-tag">Kitchen</span>
+          </div>
+          <div class="gallery-body">
+            <h3 class="gallery-title">Stovetop & Countertop Polish</h3>
+            <p class="gallery-desc">Complete grease removal and tile backsplash restoration.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="bathroom">
+          <div class="gallery-image-box">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Bathroom Cleaning" class="gallery-img">
+            <span class="gallery-tag">Bathroom</span>
+          </div>
+          <div class="gallery-body">
+            <h3 class="gallery-title">Glass Shower & Tile Grout Detail</h3>
+            <p class="gallery-desc">Hard water stain elimination and full fixture sanitization.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="living">
+          <div class="gallery-image-box">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Living Room Cleaning" class="gallery-img">
+            <span class="gallery-tag">Living Room</span>
+          </div>
+          <div class="gallery-body">
+            <h3 class="gallery-title">Hardwood & Surface Dusting</h3>
+            <p class="gallery-desc">Meticulous floor care, baseboard detailing, and vacuuming.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. ABOUT US SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="badge">About Us</div>
+          <h3>Dedicated To Delivering Spotless, Healthy Spaces</h3>
+          <p>
+            Founded with a commitment to trust, reliability, and excellence, SparkleClean provides professional cleaning services tailored to modern homeowners and business managers.
+          </p>
+          <p>
+            Every team member undergoes background checks, structured training, and quality evaluations to ensure your property is treated with utmost respect and care.
+          </p>
+
+          <div class="about-stats">
+            <div>
+              <div class="stat-num">1,200+</div>
+              <div class="stat-label">Homes Cleaned</div>
+            </div>
+            <div>
+              <div class="stat-num">99%</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Insured Staff</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=800&q=80" alt="Professional Cleaner" style="border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. BLOG SECTION
+       ========================================================================== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Cleaning Blog</div>
+        <h2 class="section-title">Latest Cleaning Insights & Tips</h2>
+        <p class="section-desc">Practical advice from our cleaning professionals to keep your property spotless.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-content">
+            <div class="blog-meta">Home Maintenance</div>
+            <h3 class="blog-title">10 Essential Kitchen Sanitization Habits</h3>
+            <p class="blog-excerpt">Simple daily routines to keep your countertops, sink, and appliances hygienic.</p>
+            <a href="#hero" class="blog-link">Read Article &rarr;</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-content">
+            <div class="blog-meta">Tenant Guide</div>
+            <h3 class="blog-title">The Complete Move-Out Cleaning Checklist</h3>
+            <p class="blog-excerpt">Ensure maximum security deposit refund with our step-by-step checklist.</p>
+            <a href="#hero" class="blog-link">Read Article &rarr;</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-content">
+            <div class="blog-meta">Eco Living</div>
+            <h3 class="blog-title">Why Non-Toxic Cleaning Products Matter</h3>
+            <p class="blog-excerpt">How eco-friendly cleaning agents protect indoor air quality for pets and kids.</p>
+            <a href="#hero" class="blog-link">Read Article &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. REVIEWS & TESTIMONIALS
+       ========================================================================== -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Client Testimonials</div>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-desc">Verified feedback from homeowners and office managers in our community.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars-row">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="review-text">"SparkleClean transformed my home before an event. Their deep cleaning team paid meticulous attention to the stove, baseboards, and bathrooms!"</p>
+          <div class="review-author">
+            <div class="avatar">SJ</div>
+            <div class="author-info">
+              <h4>Sarah Jenkins</h4>
+              <p>Weekly Residential Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars-row">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="review-text">"Punctual, polite, and thorough. Setting up bi-weekly cleaning has been great for my peace of mind while working from home."</p>
+          <div class="review-author">
+            <div class="avatar">MR</div>
+            <div class="author-info">
+              <h4>Michael Ross</h4>
+              <p>Bi-Weekly Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars-row">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="review-text">"Our office space is spotless every Monday morning. Their janitorial team is dependable, discreet, and very efficient."</p>
+          <div class="review-author">
+            <div class="avatar">EL</div>
+            <div class="author-info">
+              <h4>Elena Lopez</h4>
+              <p>Commercial Office Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. FAQ SECTION
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Quick answers to common questions about our policies and cleaning services.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question">
+            <span>Do I need to supply cleaning products or equipment?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No. Our professional teams bring all necessary eco-friendly supplies, microfibers, vacuums, and mops. If you have specialty products you prefer us to use, simply let us know.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are your cleaners background checked and insured?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All SparkleClean team members undergo thorough background checks, reference checks, and hands-on training, and we maintain full liability insurance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What if I need to cancel or reschedule my cleaning?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <div class="faq-answer">
+            <p>You can reschedule or cancel your appointment up to 24 hours in advance with zero penalty fees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-badge">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"></path>
+              </svg>
+            </div>
+            <span>SparkleClean</span>
+          </a>
+          <p>Your trusted local professional cleaning company. Delivering spotless homes, pristine offices, and healthy environments.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="calculator.html">Price Estimator</a></li>
+            <li><a href="contact.html">Contact & Book</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Standard Residential</a></li>
+            <li><a href="services.html">Deep Cleaning</a></li>
+            <li><a href="services.html">Move-In/Out Clean</a></li>
+            <li><a href="services.html">Commercial & Office</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #cbd5e1;">Cell: (800) 555-0199</p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #cbd5e1;">Email: info@sparkleclean.com</p>
+          <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.75rem;">
+            Mon - Sat: 7:00 AM - 7:00 PM<br>Sun: Closed
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SparkleClean Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Gallery Image Lightbox Modal -->
+  <div class="gallery-modal-overlay" id="gallery-modal">
+    <div class="gallery-modal-content">
+      <button class="gallery-modal-close" id="modal-close" aria-label="Close modal">✕</button>
+      <img src="" alt="Gallery Preview" class="gallery-modal-img" id="modal-img">
+      <div class="gallery-modal-body">
+        <h3 id="modal-title" style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem;">Project Title</h3>
+        <p id="modal-desc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">Project details</p>
+        <a href="contact.html" class="btn btn-primary">Book Similar Service</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <span class="toast-msg">Request submitted successfully!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

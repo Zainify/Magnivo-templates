@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureClean Pro - Professional Residential & Commercial Cleaning</title>
+  
+  <!-- Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Information Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <div class="top-bar-contact">
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:contact@purecleanpro.com">contact@purecleanpro.com</a>
+        </div>
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 16 14"></polyline>
+          </svg>
+          <span>Mon - Sat: 7:00 AM - 6:00 PM</span>
+        </div>
+      </div>
+
+      <div class="top-bar-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <a href="tel:18005550188">Dispatch: (800) 555-0188</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container nav-flex">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <span>PureClean Pro</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services & Checklist</a></li>
+          <li><a href="estimator.html" class="nav-link">Price Estimator</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact & Book</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="estimator.html" class="btn btn-primary">Instant Quote</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">Navigation</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="hero-badge">Professional Cleaning Services</span>
+          <h1 class="hero-title">Reliable, Standardized Cleaning For Homes & Offices</h1>
+          <p class="hero-subtitle">
+            PureClean Pro delivers insured, background-checked cleaning specialists to residential homes, commercial suites, and rental properties with flat-rate pricing and a 24-hour quality guarantee.
+          </p>
+          <div class="hero-actions">
+            <a href="estimator.html" class="btn btn-primary">Calculate Fixed Price</a>
+            <a href="contact.html" class="btn btn-outline">Schedule Service</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem;">Quick Service Dispatch</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">Enter your details to check technician availability in your ZIP code.</p>
+          
+          <form id="hero-quick-form">
+            <div class="form-group">
+              <label class="form-label" for="hero-zip">Property ZIP Code</label>
+              <input type="text" id="hero-zip" class="form-input" placeholder="e.g. 90210" maxlength="5" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="hero-type">Property Type</label>
+              <select id="hero-type" class="form-select" required>
+                <option value="residential">Residential Home / Apartment</option>
+                <option value="commercial">Commercial Office</option>
+                <option value="move">Move-In / Move-Out</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-secondary" style="width: 100%;">Check Availability</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <div class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">Vetted & Insured</div>
+            <div class="feature-desc">Comprehensive background checks and liability insurance on all staff.</div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">Flat-Rate Pricing</div>
+            <div class="feature-desc">Upfront rates based on room counts without hidden surcharge fees.</div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="feature-title">24-Hour Guarantee</div>
+            <div class="feature-desc">If any area is missed, our team returns within 24 hours to re-clean for free.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Core Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Offerings</span>
+        <h2 class="section-title">Standardized Cleaning Programs</h2>
+        <p class="section-desc">Designed to maintain sanitary, dust-free spaces with transparent operational workflows.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Standard Maintenance Clean</h3>
+          <p class="service-card-desc">Scheduled weekly, bi-weekly, or monthly cleaning designed for active households.</p>
+          <ul class="service-list">
+            <li><span class="check-mark">v</span> Dusting all accessible surfaces & furniture</li>
+            <li><span class="check-mark">v</span> Vacuuming carpets & mopping hard flooring</li>
+            <li><span class="check-mark">v</span> Kitchen counter & sink sanitization</li>
+            <li><span class="check-mark">v</span> Bathroom fixture scrubbing & mirror polishing</li>
+          </ul>
+          <a href="estimator.html" class="btn btn-outline" style="width: 100%;">Estimate Standard Clean</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 12h8"></path>
+              <path d="M12 8v8"></path>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Deep Detailed Clean</h3>
+          <p class="service-card-desc">Intensive cleaning program targeting buildup, baseboards, and neglected areas.</p>
+          <ul class="service-list">
+            <li><span class="check-mark">v</span> Baseboards, door frames & light switch wiping</li>
+            <li><span class="check-mark">v</span> High dusting of ceiling fans & vents</li>
+            <li><span class="check-mark">v</span> Deep tile grout scrubbing & lime scale treatment</li>
+            <li><span class="check-mark">v</span> Cabinet exterior hand-wiping & degreasing</li>
+          </ul>
+          <a href="estimator.html" class="btn btn-outline" style="width: 100%;">Estimate Deep Clean</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Move-In / Move-Out Clean</h3>
+          <p class="service-card-desc">Comprehensive turnover cleaning for real estate listings, landlords, and tenants.</p>
+          <ul class="service-list">
+            <li><span class="check-mark">v</span> Full inside cabinet & drawer cleaning</li>
+            <li><span class="check-mark">v</span> Oven & refrigerator interior scrubbing</li>
+            <li><span class="check-mark">v</span> Closet shelf wiping & fixture polishing</li>
+            <li><span class="check-mark">v</span> Full property surface sanitization</li>
+          </ul>
+          <a href="estimator.html" class="btn btn-outline" style="width: 100%;">Estimate Turnover Clean</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Region Coverage Checker -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="coverage-box">
+        <span class="section-tag">Service Area</span>
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">Check Service Area Availability</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Enter your 5-digit ZIP code below to confirm immediate dispatch coverage.</p>
+        
+        <form id="zip-check-form">
+          <div class="zip-form">
+            <input type="text" id="zip-input" class="zip-input" placeholder="Enter ZIP Code (e.g. 90210)" maxlength="5" required>
+            <button type="submit" class="btn btn-primary">Verify ZIP</button>
+          </div>
+        </form>
+
+        <div id="zip-status" class="zip-status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Comparison Table -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flat Rate Matrix</span>
+        <h2 class="section-title">Standard Service Rates Overview</h2>
+        <p class="section-desc">Sample starting price guide based on home bedroom and bathroom count.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Home Layout</th>
+              <th>Standard Maintenance</th>
+              <th>Deep Detailed Clean</th>
+              <th>Move-In / Move-Out</th>
+              <th>Estimated Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1 Bed / 1 Bath</strong></td>
+              <td>$110</td>
+              <td>$155</td>
+              <td>$195</td>
+              <td>2.0 - 2.5 Hours</td>
+            </tr>
+            <tr>
+              <td><strong>2 Bed / 2 Bath</strong></td>
+              <td>$140</td>
+              <td>$195</td>
+              <td>$245</td>
+              <td>2.5 - 3.5 Hours</td>
+            </tr>
+            <tr>
+              <td><strong>3 Bed / 2 Bath</strong></td>
+              <td>$170</td>
+              <td>$235</td>
+              <td>$295</td>
+              <td>3.5 - 4.5 Hours</td>
+            </tr>
+            <tr>
+              <td><strong>4 Bed / 3 Bath</strong></td>
+              <td>$210</td>
+              <td>$295</td>
+              <td>$365</td>
+              <td>4.5 - 6.0 Hours</td>
+            </tr>
+            <tr>
+              <td><strong>5+ Bed / 4+ Bath</strong></td>
+              <td>Custom Quote</td>
+              <td>Custom Quote</td>
+              <td>Custom Quote</td>
+              <td>Full Team Dispatch</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="estimator.html" class="btn btn-primary">Use Interactive Custom Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span>PureClean Pro</span>
+          </a>
+          <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6;">
+            PureClean Pro provides standardized residential and commercial cleaning services. All technicians are background-checked and fully insured.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Checklist</a></li>
+            <li><a href="estimator.html">Price Estimator</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact & Book</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Standard Residential</a></li>
+            <li><a href="services.html">Deep Cleaning</a></li>
+            <li><a href="services.html">Move Turnover</a></li>
+            <li><a href="services.html">Commercial Offices</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Contact & Dispatch</div>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.4rem;">Phone: (800) 555-0188</p>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.4rem;">Email: contact@purecleanpro.com</p>
+          <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.8rem;">
+            HQ: 100 Commercial Blvd, Suite 400<br>Metro City, CA 90210
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PureClean Pro Services Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
