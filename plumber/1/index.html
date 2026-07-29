@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HydroPro Plumbing - 24/7 Master Plumbing & Emergency Dispatch</title>
+  <meta name="description" content="State-licensed master plumbers offering 24/7 emergency repair, hydro-jet drain cleaning, leak detection, and water heater installation with upfront flat-rate pricing.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Emergency Dispatch Bar -->
+  <div class="emergency-strip">
+    <div class="container emergency-flex">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span class="emergency-tag">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          24/7 Emergency Active
+        </span>
+        <span>Average Regional Dispatch Response: <strong>32 Minutes</strong></span>
+      </div>
+      <div>
+        <a href="tel:18005557582" class="emergency-phone">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Dispatch Hotline: (800) 555-PLUMBER
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-flex">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+          </svg>
+        </div>
+        <span>HydroPro Plumbing</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Plumbing Services</a></li>
+          <li><a href="estimator.html" class="nav-link">Cost Estimator</a></li>
+          <li><a href="emergency.html" class="nav-link" style="color: var(--emergency); font-weight: 800;">24/7 Emergency</a></li>
+          <li><a href="about.html" class="nav-link">Licensing & Warranty</a></li>
+          <li><a href="contact.html" class="nav-link">Contact & Book</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="estimator.html" class="btn btn-primary">Instant Quote</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Hero Text -->
+        <div>
+          <div class="hero-trust-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            State Licensed • Lic #PL-984421
+          </div>
+          
+          <h1 class="hero-title">Master Plumbing Repairs & Fast 24/7 Emergency Dispatch</h1>
+          
+          <p class="hero-subtitle">
+            From clogged sewer mains and burst water pipes to tankless water heater installations. Get instant upfront pricing, zero hidden fees, and certified master plumbers at your doorstep.
+          </p>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="emergency.html" class="btn btn-emergency" style="padding: 0.9rem 1.75rem; font-size: 1rem;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Dispatch Emergency Unit
+            </a>
+
+            <a href="estimator.html" class="btn btn-outline" style="padding: 0.9rem 1.75rem; font-size: 1rem;">
+              Calculate Job Price
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div>
+              <div class="stat-item-val">32 Mins</div>
+              <div class="stat-item-lbl">Avg Emergency Response</div>
+            </div>
+            <div>
+              <div class="stat-item-val">14 Units</div>
+              <div class="stat-item-lbl">Mobile Repair Fleet</div>
+            </div>
+            <div>
+              <div class="stat-item-val">24 Months</div>
+              <div class="stat-item-lbl">Workmanship Warranty</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sales Machine Diagnostic Widget -->
+        <div class="sales-card">
+          <div class="sales-card-header">
+            <div class="sales-card-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--primary);"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              Instant Plumbing Problem Diagnostic
+            </div>
+            <div class="sales-card-sub">Select your plumbing issue to view typical repair costs and dispatch speed.</div>
+          </div>
+
+          <div class="diagnostic-options">
+            <button class="diag-btn active" data-diag="drain">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+              Main Drain / Sewer
+            </button>
+            <button class="diag-btn" data-diag="leak">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Pipe Leak Burst
+            </button>
+            <button class="diag-btn" data-diag="heater">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              Water Heater Fault
+            </button>
+            <button class="diag-btn" data-diag="toilet">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              Toilet Overflow
+            </button>
+            <button class="diag-btn" data-diag="faucet">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+              Faucet / Fixture Leak
+            </button>
+            <button class="diag-btn" data-diag="disposal">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              Garbage Disposal
+            </button>
+          </div>
+
+          <div class="diag-result-box">
+            <div style="font-size: 0.82rem; text-transform: uppercase; color: #94a3b8; font-weight: 800; letter-spacing: 0.05em;">Diagnosed Issue</div>
+            <div id="diag-problem-name" style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">Clogged Main Drain / Sewer Backup</div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1rem;">
+              <div>
+                <div style="font-size: 0.8rem; color: #cbd5e1;">Typical Flat Rate Range</div>
+                <div id="diag-price-val" class="diag-price-val">$149 - $295</div>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 0.8rem; color: #cbd5e1;">Dispatch Speed</div>
+                <div id="diag-timeframe" style="font-size: 0.92rem; font-weight: 700; color: #fef08a;">Same Day (&lt; 60 mins)</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 0.85rem; padding-top: 0.85rem; border-top: 1px solid var(--dark-surface); font-size: 0.85rem; color: #94a3b8;">
+              <strong>Recommended Action:</strong> <span id="diag-recommendation">Commercial Hydro-Jetting or Augering with video camera inspection.</span>
+            </div>
+          </div>
+
+          <a href="estimator.html" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 0.85rem;">
+            Lock In Exact Price & Schedule
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div>
+            <div class="feature-title">24/7 Rapid Response</div>
+            <div class="feature-desc">Units stationed regionally for 30-minute average emergency dispatch.</div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+          </div>
+          <div>
+            <div class="feature-title">Upfront Flat-Rate Pricing</div>
+            <div class="feature-desc">Written quote provided before work begins. No hourly rate surprises.</div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div>
+            <div class="feature-title">State-Licensed Master Plumbers</div>
+            <div class="feature-desc">California C-36 License #PL-984421. Fully insured and background-checked.</div>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div>
+            <div class="feature-title">2-Year Parts & Labor Guarantee</div>
+            <div class="feature-desc">Complete peace of mind on all repairs, repipes, and installations.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Step Precision Service Workflow Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Unmatched Workmanship Standard</span>
+        <h2 class="section-title">The HydroPro 4-Step Precision Workflow</h2>
+        <p class="section-desc">How we eliminate plumbing emergencies and ensure zero recurring pipe leaks.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-step-num">Step 01</span>
+          <h3 class="process-card-title">Rapid GPS Dispatch & Camera Audit</h3>
+          <p class="process-card-desc">
+            Our nearest mobile unit is dispatched with high-definition fiber optic video cameras to pinpoint the exact location of pipe blockages, root intrusions, or underground slab leaks.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step-num">Step 02</span>
+          <h3 class="process-card-title">Upfront Written Estimate</h3>
+          <p class="process-card-desc">
+            You receive a transparent flat-rate quote outlining materials, labor, and exact timelines before any tool touches a pipe. No hidden diagnostic fees when service is performed.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step-num">Step 03</span>
+          <h3 class="process-card-title">Master Plumber Precision Execution</h3>
+          <p class="process-card-desc">
+            State-licensed technicians perform repairs using heavy-duty copper, PEX, or 4000 PSI hydro-jetters while preserving your floors with protective shoe covers and drop cloths.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step-num">Step 04</span>
+          <h3 class="process-card-title">Pressure Test & 2-Year Warranty Audit</h3>
+          <p class="process-card-desc">
+            We perform hydrostatic pressure testing and issue an official 24-month parts and labor warranty certificate for permanent long-term confidence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Services Grid -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Residential & Commercial Services</span>
+        <h2 class="section-title">Comprehensive Master Plumbing Solutions</h2>
+        <p class="section-desc">Equipped with state-of-the-art diagnostic tools and 4000 PSI hydro-jetting units.</p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          </div>
+          <h3 class="service-card-title">Drain & Sewer Hydro-Jetting</h3>
+          <p class="service-card-desc">Clear severe grease buildups, hair clogs, and tree root intrusions from main sewer lines using 4000 PSI high-pressure water jetting.</p>
+          <div class="service-price-tag">Starting from $149</div>
+          <a href="services.html" class="btn btn-outline">Explore Drain Services</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3 class="service-card-title">Acoustic Leak Detection & Pipe Repair</h3>
+          <p class="service-card-desc">Non-invasive ultrasonic leak location for hidden slab leaks, concealed wall pipes, and main line pressure drops.</p>
+          <div class="service-price-tag">Starting from $185</div>
+          <a href="services.html" class="btn btn-outline">Explore Leak Services</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <h3 class="service-card-title">Water Heater Repair & Tankless Installs</h3>
+          <p class="service-card-desc">Same-day repair for gas, electric, and hybrid water heaters. Upgrade to high-efficiency tankless systems for continuous hot water.</p>
+          <div class="service-price-tag">Starting from $195</div>
+          <a href="services.html" class="btn btn-outline">Explore Water Heater Services</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Coverage Checker Section -->
+  <section class="section">
+    <div class="container">
+      <div class="coverage-card">
+        <span class="section-tag">Instant Technician Availability</span>
+        <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem;">Check Service Coverage In Your ZIP Code</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Enter your 5-digit postal code to check real-time technician availability in your neighborhood.</p>
+
+        <form id="zip-check-form">
+          <div class="zip-flex">
+            <input type="text" class="zip-input" id="zip-input" placeholder="Enter 5-Digit ZIP (e.g., 90210)" maxlength="5" required>
+            <button type="submit" class="btn btn-primary" style="padding: 0 1.5rem;">Check Availability</button>
+          </div>
+        </form>
+
+        <div id="zip-status" class="zip-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Customer Reviews Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Verified Homeowner Feedback</span>
+        <h2 class="section-title">Trusted By Thousands Across The Region</h2>
+        <p class="section-desc">See why HydroPro maintains a 4.9-star rating across over 1,200 service calls.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="review-text">
+            "Our main drain backed up on a Sunday night. HydroPro's emergency unit arrived in 28 minutes, ran a video camera down the line, and hydro-jetted the tree roots out cleanly. Upfront flat price as quoted."
+          </p>
+          <div class="review-meta">
+            <span class="review-author">Marcus Vance</span>
+            <span class="review-location">Metro City, CA • Main Sewer Jetting</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="review-text">
+            "Replaced our 50-gallon leaking water heater with a Navien tankless unit. The installation was immaculate, clean copper soldering, and they hauled away the old unit. Couldn't recommend them higher!"
+          </p>
+          <div class="review-meta">
+            <span class="review-author">Elena Rostova</span>
+            <span class="review-location">Westside, CA • Tankless Upgrade</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="review-text">
+            "As a commercial property manager overseeing 40 office units, HydroPro is our exclusive plumbing partner. Their 24/7 SLA and annual backflow testing keeps our facilities compliant."
+          </p>
+          <div class="review-meta">
+            <span class="review-author">David Sterling</span>
+            <span class="review-location">Oakridge Plaza • Facility Director</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Frequently Asked Questions</span>
+        <h2 class="section-title">Everything You Need To Know Before Booking</h2>
+        <p class="section-desc">Clear answers to common residential and commercial plumbing questions.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--primary); flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            How does your upfront flat-rate pricing work?
+          </div>
+          <div class="faq-a">
+            Unlike traditional plumbers who charge unpredictable hourly rates while searching for tools, HydroPro diagnostic technicians inspect the issue first and provide a binding written estimate before any work begins.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--primary); flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            What is your emergency dispatch turnaround time?
+          </div>
+          <div class="faq-a">
+            We maintain 14 fully stocked mobile units active throughout the regional metro area 24 hours a day. Our average emergency dispatch response time is 32 minutes from the moment you confirm dispatch hotline details.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--primary); flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            What does your 2-Year Workmanship Warranty cover?
+          </div>
+          <div class="faq-a">
+            All pipe fittings, copper solder joints, PEX connections, drain clearing services, and fixture installations performed by HydroPro come with a full 24-month parts and labor guarantee. If a leak occurs, we fix it at zero cost.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--primary); flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            Should I choose tankless water heating or standard tank units?
+          </div>
+          <div class="faq-a">
+            Tankless water heaters deliver endless on-demand hot water, take up 80% less wall space, and consume up to 34% less energy. Our Master Plumbers will evaluate your home's gas line size or electrical panel capacity during the visit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <span>HydroPro Plumbing</span>
+          </a>
+          <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6;">
+            HydroPro Plumbing provides 24/7 master plumbing repairs, drain hydro-jetting, water heater installation, and commercial facility servicing. Lic #PL-984421.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Plumbing Services</a></li>
+            <li><a href="estimator.html">Cost Estimator</a></li>
+            <li><a href="emergency.html">24/7 Emergency Dispatch</a></li>
+            <li><a href="about.html">Licensing & Warranty</a></li>
+            <li><a href="contact.html">Contact & Book</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Plumbing Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Drain & Sewer Cleaning</a></li>
+            <li><a href="services.html">Water Heater Systems</a></li>
+            <li><a href="services.html">Emergency Leak Detection</a></li>
+            <li><a href="services.html">Commercial Facilities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">24/7 Dispatch Desk</div>
+          <p style="font-size: 0.95rem; color: #fef08a; font-weight: 800; margin-bottom: 0.4rem;">Hotline: (800) 555-7582</p>
+          <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.4rem;">Email: dispatch@hydroproplumbing.com</p>
+          <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.8rem;">
+            HQ: 500 Industrial Pkwy, Suite 100<br>Metro City, CA 90210
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 HydroPro Plumbing Services Inc. All rights reserved. Master Plumbing License #PL-984421.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

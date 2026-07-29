@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Parameter Plumbing Cost Calculator - FlowTech Plumbing</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Dispatch Strip -->
+  <div class="top-dispatch-strip">
+    <div class="container dispatch-flex">
+      <div style="display: flex; align-items: center; gap: 0.85rem;">
+        <span class="signal-badge">
+          <span class="pulse-dot"></span>
+          ACTIVE REGIONAL SIGNAL: DISPATCH READY
+        </span>
+        <span style="color: #a1a1aa;">Average Mobile Response: <strong>24 Minutes</strong></span>
+      </div>
+      <div>
+        <a href="tel:18005553569" class="dispatch-hotline">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          24/7 Dispatch Line: (800) 555-FLOW
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-flex">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+        </div>
+        <span>FlowTech Plumbing</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Engineering Home</a></li>
+          <li><a href="services.html" class="nav-link">Service Matrix & Tariffs</a></li>
+          <li><a href="estimator.html" class="nav-link active">Cost Calculator</a></li>
+          <li><a href="emergency.html" class="nav-link" style="color: var(--emergency); font-weight: 800;">24/7 Rapid Dispatch</a></li>
+          <li><a href="about.html" class="nav-link">Compliance & Warranty</a></li>
+          <li><a href="contact.html" class="nav-link">Book Technician</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="estimator.html" class="btn btn-primary">Calculate Job Price</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section style="background: var(--dark); color: #ffffff; padding: 3.5rem 0; border-bottom: 1px solid var(--dark-border);">
+    <div class="container">
+      <span style="color: #2dd4bf; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">REAL-TIME ESTIMATION ENGINE</span>
+      <h1 style="font-size: 2.35rem; font-weight: 800; margin-top: 0.3rem; margin-bottom: 0.5rem;">Multi-Parameter Job Estimator</h1>
+      <p style="color: #a1a1aa; font-size: 1.05rem; max-width: 720px;">
+        Select your property specifications below to calculate a binding flat-rate estimate before requesting a technician.
+      </p>
+    </div>
+  </section>
+
+  <!-- Estimator Workspace Section -->
+  <section class="section">
+    <div class="container">
+      <div class="calc-wrapper">
+        
+        <!-- Interactive Controls -->
+        <div class="calc-panel">
+          
+          <!-- Group 1: Service Category -->
+          <div class="calc-group">
+            <label class="calc-label">1. Primary Plumbing Service Required:</label>
+            <div class="btn-group">
+              <button type="button" class="calc-opt-btn active" data-group="service" data-cost="245">Sewer Hydro-Jetting ($245)</button>
+              <button type="button" class="calc-opt-btn" data-group="service" data-cost="285">Acoustic Slab Leak ($285)</button>
+              <button type="button" class="calc-opt-btn" data-group="service" data-cost="195">Water Heater Flush ($195)</button>
+              <button type="button" class="calc-opt-btn" data-group="service" data-cost="590">Whole-House Repipe ($590)</button>
+              <button type="button" class="calc-opt-btn" data-group="service" data-cost="165">Fixture Install ($165)</button>
+            </div>
+          </div>
+
+          <!-- Group 2: Property Type -->
+          <div class="calc-group">
+            <label class="calc-label">2. Property Category:</label>
+            <div class="btn-group">
+              <button type="button" class="calc-opt-btn active" data-group="property" data-mult="1.0">Single Family Residence</button>
+              <button type="button" class="calc-opt-btn" data-group="property" data-mult="1.2">Multi-Tenant Condo / Apt (+20%)</button>
+              <button type="button" class="calc-opt-btn" data-group="property" data-mult="1.35">Commercial Facility (+35%)</button>
+            </div>
+          </div>
+
+          <!-- Group 3: Pipe Material -->
+          <div class="calc-group">
+            <label class="calc-label">3. Piping Material Standard:</label>
+            <div class="btn-group">
+              <button type="button" class="calc-opt-btn active" data-group="material" data-cost="0">Modern PEX / PVC ($0)</button>
+              <button type="button" class="calc-opt-btn" data-group="material" data-cost="50">Type-L Copper System (+$50)</button>
+              <button type="button" class="calc-opt-btn" data-group="material" data-cost="95">Historic Cast Iron (+$95)</button>
+            </div>
+          </div>
+
+          <!-- Group 4: Access Point -->
+          <div class="calc-group">
+            <label class="calc-label">4. Jobsite Pipe Accessibility:</label>
+            <div class="btn-group">
+              <button type="button" class="calc-opt-btn active" data-group="access" data-cost="0">Direct Access / Cabinet ($0)</button>
+              <button type="button" class="calc-opt-btn" data-group="access" data-cost="45">Crawlspace / Attic (+$45)</button>
+              <button type="button" class="calc-opt-btn" data-group="access" data-cost="120">Sub-Slab Concrete (+$120)</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Price Breakdown & Dispatch Card -->
+        <div class="calc-summary-panel">
+          <div>
+            <div style="font-size: 0.8rem; text-transform: uppercase; color: #a1a1aa; font-weight: 800; letter-spacing: 0.05em;">Calculated Upfront Tariff</div>
+            <div id="calc-price-display" class="calc-display-price">$245</div>
+            <p style="font-size: 0.82rem; color: #a1a1aa; margin-bottom: 1.5rem;">Binding estimate. Zero hourly overtime charges.</p>
+
+            <div style="border-top: 1px solid var(--dark-border); padding-top: 1.25rem; margin-bottom: 1.5rem;">
+              <div style="font-size: 0.85rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">Selected Specification Sheet:</div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+                <li style="display: flex; justify-content: space-between; color: #a1a1aa;">
+                  <span>Service:</span>
+                  <strong id="sum-service" style="color: #ffffff;">Sewer Hydro-Jetting</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; color: #a1a1aa;">
+                  <span>Property:</span>
+                  <strong id="sum-property" style="color: #ffffff;">Single Family</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; color: #a1a1aa;">
+                  <span>Piping:</span>
+                  <strong id="sum-material" style="color: #ffffff;">Modern PEX</strong>
+                </li>
+                <li style="display: flex; justify-content: space-between; color: #a1a1aa;">
+                  <span>Access:</span>
+                  <strong id="sum-access" style="color: #ffffff;">Direct Access</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form id="estimator-booking-form">
+            <div class="form-group" style="margin-bottom: 0.85rem;">
+              <input type="tel" class="form-input" placeholder="Your Phone Number" required style="border-color: var(--dark-border); background: #09090b; color: #ffffff;">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 0.85rem;">
+              Lock Rate & Request Dispatch
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            <div class="logo-badge">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <span>FlowTech Plumbing</span>
+          </a>
+          <p style="font-size: 0.88rem; color: #a1a1aa; line-height: 1.6;">
+            FlowTech Master Plumbing & Engineering provides high-precision drain jetting, acoustic leak detection, tankless water heater retrofits, and 24/7 mobile emergency dispatch. CA Master License #PL-883019.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Engineering Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Engineering Home</a></li>
+            <li><a href="services.html">Service Matrix & Tariffs</a></li>
+            <li><a href="estimator.html">Cost Calculator</a></li>
+            <li><a href="emergency.html">24/7 Priority Dispatch</a></li>
+            <li><a href="about.html">Compliance & Warranty</a></li>
+            <li><a href="contact.html">Book Technician</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Service Specialties</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Sewer Hydro-Jetting</a></li>
+            <li><a href="services.html">Acoustic Slab Leaks</a></li>
+            <li><a href="services.html">Water Heater Services</a></li>
+            <li><a href="services.html">Whole-House Repiping</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">24/7 Mobile Dispatch</div>
+          <p style="font-size: 0.95rem; color: #fb923c; font-weight: 800; margin-bottom: 0.4rem;">Hotline: (800) 555-FLOW</p>
+          <p style="font-size: 0.88rem; color: #a1a1aa; margin-bottom: 0.4rem;">Email: dispatch@flowtechplumbing.com</p>
+          <p style="font-size: 0.85rem; color: #71717a; margin-top: 0.8rem;">
+            Dispatch Center: 1200 Tech Center Way, Suite 400<br>Metro City, CA 90210
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FlowTech Plumbing & Engineering Inc. All rights reserved. Master License #PL-883019.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
